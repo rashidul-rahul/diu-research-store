@@ -34,7 +34,7 @@ $categoryData = $category->getAllCategory();
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
                         <a class="dropdown-item" href="profile.php">My Profile</a>
-                        <a class="dropdown-item" href="">My papers</a><!--blog home  1 and blog home 2-->
+                        <a class="dropdown-item" href="myPapers.php">My papers</a><!--blog home  1 and blog home 2-->
                         <a class="dropdown-item" href="logout.php">Logout</a>
                     </div>
                 </li>

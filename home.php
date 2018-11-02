@@ -24,6 +24,7 @@ include_once ('layout/head.php');
         $data =  session::get('logInMsg');
         if (isset($data)){
             echo $data;
+            session::setNull("logInMsg");
         }
         ?>
         <h2 class="my-4">Welcome to Daffodil International  Research Site</h2>

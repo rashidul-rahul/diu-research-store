@@ -1,6 +1,12 @@
 <?php
 include_once ('path.php');
 //include_once ('lib/session.php')
+include_once ('lib/session.php');
+session::init();
+if (session::get('login') == true){
+    header('Location:  home.php');
+    exit();
+}
 ?>
 <head>
 
