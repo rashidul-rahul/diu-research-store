@@ -2,7 +2,8 @@
 <html lang="en">
 
  <?php
- include_once ('layout/head.php');
+ include_once ('path.php');
+ include_once (ROOTPATH.'layout/head.php');
  ?>
 
   <body>

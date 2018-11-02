@@ -1,5 +1,12 @@
 <?php
-include_once ('../config/path.php');
+include_once('../path.php');
+include_once('../lib/session.php');
+
+session::init();
+if(!session::get('login') && session::get('name') != 'admin'){
+    header('Location: index.php?msg='.urlencode('You Must Login'));
+    exit();
+}
 ?>
 <head>
 

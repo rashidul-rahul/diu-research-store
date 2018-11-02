@@ -1,5 +1,5 @@
 <?php
-include_once ('config/database.php');
+include_once ('C:\xampp\htdocs\versity\config\database.php');
 class Category{
     public $id;
     public $name;

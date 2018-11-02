@@ -1,5 +1,5 @@
 <?php
-include_once ('config/database.php');
+include_once ('C:\xampp\htdocs\versity\config\database.php');
 //include_once ('session.php');
 class User
 {
@@ -31,12 +31,12 @@ class User
         $password = md5($data['password']);
         $sql = "SELECT * FROM `user` WHERE user.versityId = '".$versityId."' AND user.password = '".$password."'";
         $stmt = $this->db->pdo->query($sql);
-        if($stmt){
-            return $stmt->fetchAll(PDO::FETCH_OBJ);
-        }else{
-            return "nothing";
+        $value  = $stmt->fetchAll(PDO::FETCH_OBJ);
+        if ($value == null){
+            return false;
+        } else{
+            return $value;
         }
-
     }
 
     public function allUser(){

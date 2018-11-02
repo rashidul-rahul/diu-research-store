@@ -1,8 +1,8 @@
 <?php
-include_once ('../config/path.php');
+include_once('../path.php');
 ?>
 <head>
-    <title>NewsFeed</title>
+    <title>Admin Panel</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

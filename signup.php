@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-include_once ('layout/head.php');
+include_once ('layout/lagoutHead.php');
 ?>
 
 <body>

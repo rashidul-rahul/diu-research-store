@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php
+include_once ('path.php');
 include_once ('layout/lagoutHead.php');
 ?>
 

@@ -10,16 +10,19 @@ include_once ('lib/session.php');
 if($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['userLogin'])){
     $user  = new User();
     $userData = $user->userLogin($_POST);
-    foreach ($userData as $data);
-    session::init();
-    session::set('login', 'true');
-    session::set('userId', $data->id);
-    session::set('userName', $data->fullName);
-    session::set('versityId', $data->versityId);
-    session::set('logInMsg', '<div class="alert alert-success">SuccessFully Logged In</div>');
-    header('Location: home.php');
-}else{
-    $msgr = "nothnig";
+    if($userData == false){
+        $note = '<div class="alert alert-danger">Invalid User Name Or Password</div>';
+    }else{
+        foreach ($userData as $data);
+        session::init();
+        session::set('login', 'true');
+        session::set('userId', $data->id);
+        session::set('userName', $data->fullName);
+        session::set('versityId', $data->versityId);
+        session::set('logInMsg', '<div class="alert alert-success">SuccessFully Logged In</div>');
+        header('Location: home.php');
+    }
+
 }
 ?>
 
@@ -50,6 +53,11 @@ include_once ('layout/navlogut.php');
             }
             ?>
         </div>
+        <?php
+        if(isset($note)){
+            echo $note;
+        }
+        ?>
         <h2><caption>User Login</caption></h2>
         <form action="" class="form-group" method="post" >
             <select class="form-control" name="choice" id="">

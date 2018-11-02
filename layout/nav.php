@@ -1,3 +1,9 @@
+<?php
+include_once ('lib/category.php');
+
+$category = new Category();
+$categoryData = $category->getAllCategory();
+?>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="home.php">Daffodil International University Research Papers</a>
@@ -14,8 +20,12 @@
                         Subject
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item" href="portfolio-1-col.php">Computer Science</a>
-                        <a class="dropdown-item" href="portfolio-2-col.php">Economics</a>
+                        <?php
+                        foreach ($categoryData as $data){
+                            echo "<a class=\"dropdown-item\" href=\"category.php?id=$data->id\">".$data->name."</a>";
+                        }
+                        ?>
+
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -23,7 +33,7 @@
                         Profile
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="sidebar.php">My Profile</a>
+                        <a class="dropdown-item" href="profile.php">My Profile</a>
                         <a class="dropdown-item" href="">My papers</a><!--blog home  1 and blog home 2-->
                         <a class="dropdown-item" href="logout.php">Logout</a>
                     </div>

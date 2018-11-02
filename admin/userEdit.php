@@ -69,69 +69,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])){
                                 <form role="form" action="" method="post">
 
                                     <div class="form-group">
-                                        <label  for="name">Full Name</label>
-                                        <input id="name"  name="name" type="text" class="form-control" value="<?=$data->name?>" >
+                                        <label  for="fullName">Full Name</label>
+                                        <input id="fullName"  name="fullName" type="text" class="form-control" value="<?=$data->fullName?>" >
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <input id="email" class="form-control" value="<?=$data->email?>" type="email" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="phone">Contact Number</label>
-                                        <input id="phone" name="phone" type="text" class="form-control" value="<?=$data->phone?>">
+                                        <label for="universityId">University Id</label>
+                                        <input id="phone" name="universityId" type="text" class="form-control" value="<?=$data->versityId?>">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="address">Address</label>
-                                        <input  id="address" name="address" class="form-control" value="<?=$data->address?>">
-                                    </div>
-<!--                                    <div class="form-group">-->
-<!--                                        <label for="password">Password</label>-->
-<!--                                        <input id="password" class="form-control" placeholder="*******" type="password" name="password">-->
-<!--                                    </div>-->
-                                    <!--                                    <div class="form-group">-->
-                                    <!--                                        <label>Static Control</label>-->
-                                    <!--                                        <p class="form-control-static">email@example.com</p>-->
-                                    <!--                                    </div>-->
-                                    <!--                                    <div class="form-group">-->
-                                    <!--                                        <label>File input</label>-->
-                                    <!--                                        <input type="file">-->
-                                    <!--                                    </div>-->
-                                    <!--                                    <div class="form-group">-->
-                                    <!--                                        <label>Text area</label>-->
-                                    <!--                                        <textarea class="form-control" rows="3"></textarea>-->
-                                    <!--                                    </div>-->
-                                    <!--                                    <div class="form-group">-->
-                                    <!--                                        <label>Checkboxes</label>-->
-                                    <!--                                        <div class="checkbox">-->
-                                    <!--                                            <label>-->
-                                    <!--                                                <input type="checkbox" value="">Checkbox 1-->
-                                    <!--                                            </label>-->
-                                    <!--                                        </div>-->
-                                    <!--                                        <div class="checkbox">-->
-                                    <!--                                            <label>-->
-                                    <!--                                                <input type="checkbox" value="">Checkbox 2-->
-                                    <!--                                            </label>-->
-                                    <!--                                        </div>-->
-                                    <!--                                        <div class="checkbox">-->
-                                    <!--                                            <label>-->
-                                    <!--                                                <input type="checkbox" value="">Checkbox 3-->
-                                    <!--                                            </label>-->
-                                    <!--                                        </div>-->
-                                    <!--                                    </div>-->
-                                    <!--                                    <div class="form-group">-->
-                                    <!--                                        <label>Inline Checkboxes</label>-->
-                                    <!--                                        <label class="checkbox-inline">-->
-                                    <!--                                            <input type="checkbox">1-->
-                                    <!--                                        </label>-->
-                                    <!--                                        <label class="checkbox-inline">-->
-                                    <!--                                            <input type="checkbox">2-->
-                                    <!--                                        </label>-->
-                                    <!--                                        <label class="checkbox-inline">-->
-                                    <!--                                            <input type="checkbox">3-->
-                                    <!--                                        </label>-->
-                                    <!--                                    </div>-->
                                     <button type="submit" name="update" class="btn btn-default">Submit</button>
-                                    <button href="changePass.php?id=<?=$data->id?>" class="btn btn-default">Change Password</button>
                                     <button type="submit" name="delete" class="btn btn-default">Delete Account</button>
                                 </form>
                             </div>

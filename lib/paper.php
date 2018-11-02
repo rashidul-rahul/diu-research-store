@@ -1,5 +1,5 @@
 <?php
-include ('../config/database.php');
+include ('C:\xampp\htdocs\versity\config\database.php');
 class paper
 {
     public $id;
@@ -16,7 +16,13 @@ class paper
     }
 
     public function createPaper($data){
+        $name = $data['fullName'];
+        $email = $data['email'];
+        $password = md5($data['password']);
+        $versityId = $data['versityId'];
 
+        $sql = 45;
+        return $this->db->pdo->exec($sql);
     }
 
     public function viewAllPaper(){

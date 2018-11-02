@@ -1,5 +1,5 @@
 <?php
-include_once ('../config/path.php');
+include_once('../path.php');
 ?>
 <script src="<?=APP_PATH?>/assets/js/jquery.min.js"></script>
 <script src="<?=APP_PATH?>/assets/js/wow.min.js"></script>

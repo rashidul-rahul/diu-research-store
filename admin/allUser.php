@@ -1,5 +1,6 @@
 <?php
-include ('../lib/User.php');
+include_once ('../path.php');
+include (ROOTPATH.'/lib/user.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,8 +50,7 @@ $users = $userList->allUser();
                             <tr>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Phone</th>
-                                <th>Address</th>
+                                <th>university Id</th>
                                 <th>Registered Time</th>
                                 <th>Action</th>
                             </tr>
@@ -59,10 +59,9 @@ $users = $userList->allUser();
                             <?php
                             foreach ($users as $user){?>
                                 <tr>
-                                    <td><?=$user->name?></td>
+                                    <td><?=$user->fullName?></td>
                                     <td><?=$user->email?></td>
-                                    <td class="center"><?=$user->phone?></td>
-                                    <td class="center"><?=$user->address?></td>
+                                    <td class="center"><?=$user->versityId?></td>
                                     <td class="center"><?=$user->createdAt?></td>
                                     <td><a href="userEdit.php?id=<?=$user->id?>">EDIT</a></td>
                                 </tr>

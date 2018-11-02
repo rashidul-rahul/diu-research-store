@@ -1,6 +1,6 @@
 <?php
-include_once ('config/path.php');
-include_once ('lib/session.php');
+include_once ('path.php');
+include_once (ROOTPATH.'/lib/session.php');
 session::init();
 if(!session::get('login')){
     header('Location: index.php?msgg='.urlencode('You Must login'));

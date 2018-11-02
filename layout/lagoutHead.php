@@ -1,5 +1,5 @@
 <?php
-include_once ('config/path.php');
+include_once ('path.php');
 //include_once ('lib/session.php')
 ?>
 <head>
