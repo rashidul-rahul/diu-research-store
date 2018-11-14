@@ -43,7 +43,7 @@ include_once ('../path.php');
                     <a href="#"><i class="fa fa-table fa-fw"></i> Papers<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="<?=APP_PATH?>/admin/allReport.php"> All Report</a>
+                            <a href="<?=APP_PATH?>/admin/allPaper.php"> All Papers</a>
                         </li>
                     </ul>
                 </li>

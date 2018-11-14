@@ -35,7 +35,7 @@ include_once('layout/head.php');
             <a href="about.php" class="list-group-item">About</a>
             <a href="services.html" class="list-group-item">Services</a>
             <a href="contact.php" class="list-group-item">Contact</a>
-            <a href="portfolio-1-col.php" class="list-group-item">1 Column Portfolio</a>
+            <a href="viewCategory.php" class="list-group-item">1 Column Portfolio</a>
             <a href="portfolio-2-col.php" class="list-group-item">2 Column Portfolio</a>
             <a href="portfolio-3-col.html" class="list-group-item">3 Column Portfolio</a>
             <a href="portfolio-4-col.html" class="list-group-item">4 Column Portfolio</a>

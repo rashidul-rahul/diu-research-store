@@ -22,25 +22,22 @@ include_once ('layout/nav.php');
 ?>
 <!-- Page Content -->
 <div class="container">
-    <div class="" style="height: 50px;">
+    <div class="" style="height: 70px;">
     </div>
-    <h2 class="my-4">My Papers</h2>
-    <!-- Marketing Icons Section -->
+    <h2 style="text-align: center">My Uploaded Papers</h2>
+    <br><br>
     <div class="row">
         <?php
-        if(empty($paperData)){
-            echo '<div class="alert alert-danger" style="margin-top: 50px; margin-bottom: 50px"><h1>You Have No Uploaded Paper</h1></br></br><button class="btn btn-success"><a href="upload.php" style="text-decoration: none; color: black">Upload Your Paper</a></button></div>';
-        }
-        foreach ($paperData as  $paper) {
+        foreach ($paperData as $paper) {
             ?>
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <h4 class="card-header"><?=$paper->title?></h4>
+                    <a href="#"><img class="card-img-top" src="<?=$paper->paperImage ?>" alt=""></a>
                     <div class="card-body">
-                        <p class="card-text"><?=$paper->description?></p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="paper.php?id=<?=$paper->id?>" class="btn btn-primary">Learn More</a>
+                        <h4 class="card-title">
+                            <a href="paper.php?id=<?= $paper->id ?>"><?= $paper->title ?></a>
+                        </h4>
+                        <p class="card-text"><?= $paper->description ?></p>
                     </div>
                 </div>
             </div>
@@ -48,6 +45,7 @@ include_once ('layout/nav.php');
         }
         ?>
     </div>
+    <div style="height: 20px"></div>
 </div>
 
 <?php

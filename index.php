@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['userLogin'])){
     $user  = new User();
     $userData = $user->userLogin($_POST);
     if($userData == false){
-        $note = '<div class="alert alert-danger">Invalid User Name Or Password</div>';
+        $note = '<div class="alert alert-danger">Invalid University Id Or Password</div>';
     }else{
         foreach ($userData as $data);
         session::init();

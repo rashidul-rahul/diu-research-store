@@ -6,7 +6,7 @@ $categoryData = $category->getAllCategory();
 ?>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="home.php">Daffodil International University Research Papers</a>
+        <a class="navbar-brand" href="home.php">Daffodil International University Research Portal</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +22,7 @@ $categoryData = $category->getAllCategory();
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                         <?php
                         foreach ($categoryData as $data){
-                            echo "<a class=\"dropdown-item\" href=\"category.php?id=$data->id\">".$data->name."</a>";
+                            echo "<a class=\"dropdown-item\" href=\"viewCategory.php?id=$data->id\">".$data->name."</a>";
                         }
                         ?>
 

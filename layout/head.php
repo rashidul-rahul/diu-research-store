@@ -13,7 +13,7 @@ if(!session::get('login')){
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DIU Research Papers</title>
+    <title>DIU Research Portal</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?=APP_PATH?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

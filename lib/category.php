@@ -37,7 +37,7 @@ class Category{
         $sql = "SELECT * FROM `category` WHERE `id` = ".$id."";
         $stmt = $this->db->pdo->query($sql);
         if ($stmt){
-            return $stmt->fetchAll(PDO::FETCH_CLASS, 'category');
+            return  $stmt->fetchAll(PDO::FETCH_CLASS, 'category');
         } else{
             return 'False';
         }
