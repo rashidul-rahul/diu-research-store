@@ -60,7 +60,15 @@ include_once ('layout/nav.php');
         <?php
     }
     ?>
-
+<div class="col-sm-10">
+    <h2>Comments</h2>
+    <hr>
+    <form action="" method="post">
+        <label for="comment">Write Your Comments</label>
+        <textarea class="form-control" id="comment" name="comment"></textarea>
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>
 
 </div>
 <div style="margin-top: 30px"></div>

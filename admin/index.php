@@ -28,9 +28,9 @@ if($_SERVER['REQUEST_METHOD'] = 'POST' && isset($_POST['adminLogin'])){
 <body>
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 <div class="container">
-
-    <div class="col-md-4 col-lg-offset-4">
-        <h1>ADMIN LOGIN</h1>
+    <br><br><br>
+    <div class="col-md-6 col-lg-offset-3">
+        <h2> DIU RESEARCH PORTAL ADMIN LOGIN</h2>
         <div class="" style="color: red">
             <?php
             if(isset($_GET['msg'])){
